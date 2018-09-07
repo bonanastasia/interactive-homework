@@ -1,0 +1,21 @@
+.shopping-item{
+    height: 500px;
+}
+
+.shopping-container {
+    display: flex;
+}
+
+.main-block {
+    width: 50%;
+}
+
+.image-tank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buy-message {
+    display: none;
+}
