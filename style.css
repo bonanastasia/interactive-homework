@@ -4,10 +4,12 @@
 
 .shopping-container {
     display: flex;
+    background-color: white;
 }
 
 .main-block {
     width: 50%;
+    background-color: white;
 }
 
 .image-tank {
@@ -18,4 +20,29 @@
 
 #buy-message {
     display: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background-color: #7ac9d3;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+
+}
+
+.alert {
+    text-align: center;
+    background-color: #7ac9d3;
+    color: white;
+}
+
+.btn-outline-success {
+    color: #ac9d3;
+    background-color: transparent;
+    background-image: none;
+    border-color: gray;
+}
+
+.btn-outline-success {
+    color: gray;
 }
