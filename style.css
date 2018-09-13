@@ -46,3 +46,14 @@
 .btn-outline-success {
     color: gray;
 }
+
+.btn-primary {
+    background-color: #7ac9d3;
+    border-color: #7ac9d3;
+}
+.recommended-item {
+    transition: all 0.4s ease-in;
+}
+.fade-out{
+    opacity: .25;
+}

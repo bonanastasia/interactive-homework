@@ -1,15 +1,21 @@
+// declaring variable, then assigning a value of 0
+var shoppingCartStatus = 0;
 
-var shoppingCartStatus=0;
-$("#buy").on("click",function(event){
-event.preventDefault();
-$("#buy-message").css("display", "block");
-shoppingCartStatus=shoppingCartStatus+1;
-$("#cartItems") .text(shoppingCartStatus)
+// select element with id of buy, then add event listener on click of that element
+$("#buy").on("click", function (event) {
+
+    // don't do the default browser action (refresh)
+    event.preventDefault();
+
+    // display alert with id of "buy-message"
+    $("#buy-message").css("display", "block");
+
+    shoppingCartStatus = shoppingCartStatus + 1;
+
+    $("#cartItems").text(shoppingCartStatus);
+
 })
 
-// Jquery methods to review 
-// on 
-// text
-// append
-// val
-// css
+$(".recommended-item").on("click", function (event) {
+    $(this).toggleClass("fade-out");
+});
