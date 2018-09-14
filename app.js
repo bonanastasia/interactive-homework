@@ -19,3 +19,19 @@ $("#buy").on("click", function (event) {
 $(".recommended-item").on("click", function (event) {
     $(this).toggleClass("fade-out");
 });
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
+
+$("#helpbutton").on("click", function (event) {
+    var popoverState = $(this).attr("popover")
+    if (popoverState === "closed") {
+        $(this).attr("popover", "open")
+        $("#chatbox").removeClass("hiden");
+    } else {
+        $(this).attr("popover", "closed")
+        $("#chatbox").addClass("hiden");
+
+    }
+});
